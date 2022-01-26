@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+.home-page{
+    height: 100vh;
+    overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aside {
+    overflow-y: auto;
+    /* width: 20vw !important; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aside .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.aside ul {
+    margin-top: 8vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Aside Scrollbar */
+
+.aside::-webkit-scrollbar {
+    width: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aside::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+.aside::-webkit-scrollbar-thumb {
+    background: #C1C1C1; 
+    border-radius: 10px;
+}
+
+.aside::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+}
+
+.header{
+    position: fixed;
+    /* left: 15vw; */
+    right: 0;
+    z-index: 500;
+}
+
+.pill{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.showcase {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Showcase Scrollbar */
+
+.showcase::-webkit-scrollbar {
+    width: 10px;
+}
+
+.showcase::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+}
+
+.showcase::-webkit-scrollbar-thumb {
+    background: #C1C1C1; 
+    border-radius: 5px;
+}
+
+.showcase::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+}
+
+.landing{
+    position: relative;
+    top: 15vh;
+    padding: 0 30px;
 }

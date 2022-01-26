@@ -1,13 +1,182 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --theme_clr: #2B9D13;
+    --theme_bg_light: #afd3a8;
+    --theme_clr_drk: #18530c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    padding: 0;
+    margin: 0;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.bg{
+    background-color: var(--theme_clr);
+}
+
+.btn{
+    outline: none;
+}
+
+.bg-white{
+    background-color: white;
+    z-index: 100;
+}
+
+figure {
+    margin: 0px;
+}
+
+.theme_btn {
+    background: var(--theme_clr);
+    border: solid #fff 2px !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.theme_bg_light {
+    background: var(--theme_bg_light);
+}
+
+.theme_btn_drk {
+    background: var(--theme_clr_drk);
+    border: solid #fff 2px !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.object_cover {
+    object-fit: cover;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: var(--theme_clr) !important;
+}
+
+.dlt_btn {
+    background: var(--theme_clr);
+    color: #fff !important;
+    padding-right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.dlt_btn i {
+    font-size: 17px;
+}
+
+.cstm_tabs {
+    border: 0px solid var(--theme_clr) !important;
+    border-bottom: 0px !important;
+    width: 100%;
+}
+
+.cstm_tabs ul li a {
+    color: black;
+}
+
+.cstm_tabs2 {
+    border: 0px solid var(--theme_clr) !important;
+    border-bottom: 0px !important;
+}
+
+.cstm_tabs2 ul li a {
+    color: black;
+}
+
+.cstm_tabs2 ul li .active {
+    background-color: transparent !important;
+    color: var(--theme_clr) !important;
+    border-bottom: 2px solid var(--theme_clr) !important;
+}
+
+.sts {
+    cursor: default !important;
+}
+
+
+/* .ord_tab_hd {
+    border: 0px !important;
+    color: #000;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.ord_tab_hd:hover {
+    color: #000;
+}
+
+.ord_tab_hd.active {
+    color: var(--theme_clr) !important;
+    background: #fff !important;
+    border-bottom: 2px solid var(--theme_clr) !important;
+} */
+
+.sidebar-nav ul .sidebar-item .first-level .sidebar-item.active .sidebar-link {
+    color: var(--theme_clr);
+    font-weight: bold;
+    /* background: #A75514; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: #d9fa85 !important;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: var(--theme_clr) !important;
+}
+
+.btn-danger {
+    font-size: 17px !important;
+    padding: 5px 10px !important;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.src_hstry {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.src_hstry li {
+    width: 31%;
+    margin-right: 2%;
+    list-style: decimal;
+}
+
+
+/* .logo {
+    background: #fff;
+    padding: 10px;
+} */
